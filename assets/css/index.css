@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: #3a3a3a;
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+
+	width: 400px;
+	height: 175px;
+	border-radius: 10px;
+	box-shadow: rgba(75, 237, 255, 0.5) 0px 5px 20px;
+}
+
+.time,
+.calendar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hours,
+.minutes,
+.dots {
+	font-size: 80px;
+	font-weight: 600;
+}
+
+.dots {
+	margin: 0 10px;
+	color: #ccc;
+	padding-bottom: 10px;
+}
+
+.hours {
+	background: linear-gradient(90deg, #634dff, #5fd4ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.minutes {
+	background: linear-gradient(90deg, #ff5e9a, #ffb960);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.period {
+	color: #ffb960;
+}
+
+.seconds {
+	color: #aaff5f;
+}
+
+.right-side {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	height: 70px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.calendar {
+	color: #ff80af;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.weekday,
+.month,
+.day {
+	margin-right: 8px;
+}
